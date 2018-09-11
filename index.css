@@ -1,5 +1,5 @@
 body{
-        background-color: rgb(99, 61, 88) !important;
+        background-color: rgb(99, 61, 88);
     }
 
 div {
@@ -12,11 +12,11 @@ div {
         
 
 
-.navbar-nav li a {color: #000000 !important;}
+.navbar-nav li a {color: #000000;}
 
-.navbar-brand {color: rgb(252, 252, 252) !important;}
+.navbar-brand {color: rgb(252, 252, 252);}
 
-.row {text-align: center !important;
+.row {text-align: center;
         padding-right: auto;
-        padding-left: :auto;
+        padding-left: auto;
 }
