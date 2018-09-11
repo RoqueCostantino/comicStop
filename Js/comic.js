@@ -1,3 +1,5 @@
+'use strict';
+
 let comics = [
     {
         "_id": "5b8eec8bd67a0fa0e563402d",
@@ -300,10 +302,14 @@ let comics = [
         ]
     }]
 
-
+    //Tech note: Document isn't properly indented
+    //Tech note: All the functions names, variables and comments must be in english
+    //Tech note: All the functions returning information about a comic must return an object or array of objects
+    //Tech note: All .js files must contain the string 'use strict' at the start of the document
 
     /*comprobar id existentes*/
     function comprobar(num) {
+        //Tech note: variables "n" and "b" doesn't need to exist, arguments can be passed directly
         let n = num;
         let b = comics;
         comics.forEach(function (b) {
