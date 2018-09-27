@@ -7,16 +7,13 @@ html body {
 
 /*NavBar*/
 
-div {
-        background-color: #ac4785;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: bold;
-        font-size: 20px;
-       
-    }
 
  /* NavBar buttons: Top ten, News, Dropdown(Universos)*/ 
-
+.navbar .container-fluid {background-color: #ac4785;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color:white;}
 .navbar .container-fluid .collapse .nav  .active  a  {
         color: #000;
     }
@@ -30,5 +27,28 @@ div {
         color: #fff;
     }
 
-    
-    
+/*Container de imagenes de la seccion izquierda de recomendados*/
+.container .row .media .media-body .media-heading {
+    background-color: #000 !important;
+}
+
+/*barra vertical*/
+.container  .box {
+    border: 6px solid grey;
+    height: 377px;
+    background-color: black;
+    color: white;
+}
+
+
+
+/*float*/
+
+.pepe a.panel-heading img {
+    z-index: 10;
+    position: relative;
+    margin-left: -380px;
+    background-color: none;
+    height: 350px;
+    width: 144px;
+}
