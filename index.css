@@ -3,29 +3,32 @@
 
 html body {
         background-color: #633d58;
-    }
+}
 
 /*NavBar*/
 
 
  /* NavBar buttons: Top ten, News, Dropdown(Universos)*/ 
-.navbar .container-fluid {background-color: #ac4785;
+.navbar .container-fluid {
+    background-color: #ac4785;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
     font-size: 20px;
-    color:white;}
+    color:white;
+}
+
 .navbar .container-fluid .collapse .nav  .active  a  {
         color: #000;
-    }
+}
 .navbar .container-fluid .collapse .nav a {
         color: #000;
-    }
+}
 
 /*title comicStop*/
 
 .navbar .container-fluid .navbar-header .navbar-brand {
-        color: #fff;
-    }
+    color: #fff;
+}
 
 /*Container de imagenes de la seccion izquierda de recomendados*/
 .container .row .media .media-body .media-heading {
@@ -35,20 +38,25 @@ html body {
 /*barra vertical*/
 .container  .box {
     border: 6px solid grey;
-    height: 377px;
     background-color: black;
     color: white;
+    padding: 5%;
+    margin-bottom: 5%;
 }
-
-
 
 /*float*/
 
 .pepe a.panel-heading img {
     z-index: 10;
-    position: relative;
-    margin-left: -380px;
+    position: absolute;
+    margin-left: 286px;
     background-color: none;
     height: 350px;
-    width: 144px;
+    width: 289px;
+    top: 64px;
+}
+
+.button {
+    hover:auto;
+   
 }
