@@ -1,27 +1,31 @@
 
 /*Body Page Background*/
 
-html body {
-        background-color: #633d58;
+body {
+    background-image:  url("./imagenes/superman-dc-comic-art-bb.jpg");
 }
-
-/*NavBar*/
 
 
  /* NavBar buttons: Top ten, News, Dropdown(Universos)*/ 
 .navbar .container-fluid {
-    background-color: #ac4785;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #d4d1d1;
+    font-family: ComicTitles;
     font-weight: bold;
     font-size: 20px;
-    color:white;
+    
+    
+}
+.nav a{
+    text-shadow:1px 1px #eeff03 !important;
+    color:rgb(109, 106, 106) !important;
 }
 
 .navbar .container-fluid .collapse .nav  .active  a  {
-        color: #000;
+    color: #fff;
 }
+
 .navbar .container-fluid .collapse .nav a {
-        color: #000;
+    color: #fff;
 }
 
 /*title comicStop*/
@@ -32,16 +36,19 @@ html body {
 
 /*Container de imagenes de la seccion izquierda de recomendados*/
 .container .row .media .media-body .media-heading {
-    background-color: #000 !important;
+    background-color: rgba(#8f8d8d, 0.5) !important;
 }
 
 /*barra vertical*/
 .container  .box {
     border: 6px solid grey;
-    background-color: black;
+    background-color: #8f8d8d;
     color: white;
     padding: 5%;
     margin-bottom: 5%;
+    opacity: 0.9;
+    font-family: ComicDescription;
+    
 }
 
 /*float*/
@@ -54,9 +61,84 @@ html body {
     height: 350px;
     width: 289px;
     top: 64px;
+    pointer-events: none;
 }
 
-.button {
-    hover:auto;
-   
+/*barra de votacion*/
+.move h4{
+    left: 399px;
+    z-index: 4;
+    position: absolute;
+    bottom: 8px;
+    text-align: center;
+    height: 3px;
+    text-shadow:1px 1px #eeff03;
+    color:rgb(109, 106, 106);
+    font-family: ComicTitles;
+
+}
+
+.boxVS p{
+    font-family: ComicDescription;
+    font-size: x-large;
+    text-align: center;
+    text-shadow:2px 2px #181817;
+    color:rgb(233, 236, 37);
+}
+
+.thumbnail {
+    margin-bottom: 10px;
+}
+
+.thumbnail:hover{
+    z-index: 22;
+}
+#comic {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color:white;
+}
+
+.searchButton{
+    background-color: transparent;
+    border: transparent;
+}
+
+.navbar-brand{
+    font-family: comicStyle;
+    font-size: 130%;
+    text-shadow:0.5px 0.5px #cc0000;
+}
+
+.progress {
+    height: 25px;
+    margin-bottom: 1px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+
+@font-face{
+    font-family: comicStyle;
+    src: url(./TipoGrafias/SFComicScriptShaded.ttf);
+}
+
+@font-face{
+    font-family: ComicTitles;
+    src: url(./TipoGrafias/SFComicScript.ttf);
+}
+
+@font-face{
+    font-family: ComicDescription;
+    src: url(./TipoGrafias/SFWonderComicBoldItalic.ttf);
 }
