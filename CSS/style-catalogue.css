@@ -1,0 +1,46 @@
+.margin-top-5 {
+    margin-top: 5%;
+}
+
+body {
+    background-image:url("./../imagenes/superman-dc-comic-art-bb.jpg");
+}
+
+@font-face {
+    font-family:"secondTitle";
+    src: url(./../TipoGrafias/SFComicScript.ttf);
+}
+
+@font-face {
+    font-family: "comicTitle";
+    src: url(./../TipoGrafias/SFComicScriptShaded.ttf);
+}
+
+@font-face {
+    font-family: "searchPage";
+    src: url(./../TipoGrafias/SFWonderComicBoldItalic.ttf);
+}
+
+.fontSearch {
+    font-family: secondTitle;
+    color:rgb(250, 255, 46);
+    text-shadow: 0.5px 0.5px #fa0000;
+    font-size: 330%;
+}
+
+.comicStop {
+    font-family: comicTitle;
+    text-shadow: 0.5px 0.5px #cc0000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navBar-comics {
+    font-family: secondTitle;
+    color: rgb(109, 106, 106);
+    text-shadow: 1px 1px #EEFF03;
+}
+
+.navegacion-barra {
+    background-color: #D4D1D1;
+}
