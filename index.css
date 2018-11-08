@@ -1,81 +1,45 @@
 
 /*Body Page Background*/
 
-body {
+.background-cover-vote {
     background-image:  url("./imagenes/superman-dc-comic-art-bb.jpg");
 }
 
+.background-cover { 
+    background-image:  url("./imagenes/Ws.53.jpeg");
+    /*background-size: cover;*/
+}
 
- /* NavBar buttons: Top ten, News, Dropdown(Universos)*/ 
-.navbar .container-fluid {
+ /*NavBar buttons: catalogo,votacion, Dropdown(Universos)*/
+.navbar {
     background-color: #d4d1d1;
     font-family: ComicTitles;
     font-weight: bold;
     font-size: 20px;
-    
-    
-}
-.nav a{
-    text-shadow:1px 1px #eeff03 !important;
-    color:rgb(109, 106, 106) !important;
 }
 
-.navbar .container-fluid .collapse .nav  .active  a  {
-    color: #fff;
-}
+/*Imagen de Versus de la pagina votacion*/
 
-.navbar .container-fluid .collapse .nav a {
-    color: #fff;
-}
-
-/*title comicStop*/
-
-.navbar .container-fluid .navbar-header .navbar-brand {
-    color: #fff;
-}
-
-/*Container de imagenes de la seccion izquierda de recomendados*/
-.container .row .media .media-body .media-heading {
-    background-color: rgba(#8f8d8d, 0.5) !important;
-}
-
-/*barra vertical*/
-.container  .box {
-    border: 6px solid grey;
-    background-color: #8f8d8d;
-    color: white;
-    padding: 5%;
-    margin-bottom: 5%;
-    opacity: 0.9;
-    font-family: ComicDescription;
-    
-}
-
-/*float*/
-
-.pepe a.panel-heading img {
-    z-index: 10;
+.versus img {
+    z-index: 10 !important;
     position: absolute;
-    margin-left: 286px;
-    background-color: none;
+    top: 216px;
     height: 350px;
     width: 289px;
-    top: 64px;
     pointer-events: none;
+    text-align: center;
+    left: 503px;
 }
 
 /*barra de votacion*/
-.move h4{
-    left: 399px;
-    z-index: 4;
-    position: absolute;
-    bottom: 8px;
+.title-vote h4{
+    z-index: 5;
     text-align: center;
-    height: 3px;
+    margin-top: 16px;
     text-shadow:1px 1px #eeff03;
     color:rgb(109, 106, 106);
     font-family: ComicTitles;
-
+   
 }
 
 .boxVS p{
@@ -84,6 +48,7 @@ body {
     text-align: center;
     text-shadow:2px 2px #181817;
     color:rgb(233, 236, 37);
+    margin:-10px;
 }
 
 .thumbnail {
@@ -107,26 +72,20 @@ a:hover {
     color:white;
 }
 
-.searchButton{
-    background-color: transparent;
-    border: transparent;
-}
-
-.navbar-brand{
-    font-family: comicStyle;
-    font-size: 130%;
-    text-shadow:0.5px 0.5px #cc0000;
-}
-
-.progress {
-    height: 25px;
-    margin-bottom: 1px;
+.move progress {
+    
     overflow: hidden;
-    background-color: #f5f5f5;
+    background-color: whitesmoke;
     border-radius: 4px;
     -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
     box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
 }
+
+.progress{
+    height: 25px;
+}
+
+/*FUENTES*/
 
 @font-face{
     font-family: comicStyle;
@@ -140,5 +99,58 @@ a:hover {
 
 @font-face{
     font-family: ComicDescription;
-    src: url(./TipoGrafias/SFWonderComicBoldItalic.ttf);
+    src: url(./TipoGrafias/SFWonderComicBoldItalic.ttf); */
 }
+
+/*Pagina de Inicio Imagen*/
+
+.winner-container{
+   text-align: center;
+}
+
+.winner{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 120px;
+}
+
+/* barra de navegacion botones (catalogo, votacion, universos)*/
+.navbar .collapse.navbar-collapse{
+    text-shadow:1px 1px #eeff03;
+    font-family: ComicTitles;
+}
+
+a.nav-link{
+    color:rgb(109, 106, 106);
+}
+
+a.navbar-brand{
+    font-family: comicStyle;
+    font-size: 130%;
+    text-shadow:0.5px 0.5px #cc0000;
+}
+
+/* imagenes centrales de la pag de votacion*/
+.imagen-size-vote{
+    max-width: 400px;
+    max-height: 600px;
+}
+
+.button-size{
+    margin-top: 10%;
+}
+
+/*Titulo de pagina de inicio*/
+.title-winner{
+    text-shadow:1px 1px #fa0000;
+    color:rgb(250, 255, 46);
+    font-family: ComicTitles;
+    font-size: 8em;
+    text-align: center;
+    z-index: 15px;
+    position: absolute;
+    right: auto;
+    left: auto;
+    width: 100%;
+}
+

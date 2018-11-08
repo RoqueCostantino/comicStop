@@ -5,7 +5,3 @@ function VoteBar(comic1,comic2) {
 
     document.getElementById("progressBar").style.width = pu + "%";
 };               
-
-function dissabled() {
-
-};
