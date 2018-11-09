@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<!-- CUSTOM STYLES -->
+<link rel="stylesheet" type="text/css" href="index.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./js/comic.js"></script>
+
+
+<title> ComicStop </title>
+
+</head>
+<body class="background-cover-vote">
+      
+            <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="./inicio.html">COMIC STOP</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      
+                        <div class="collapse navbar-collapse">
+                          <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="./catalogue.html">CATALOGO<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="./Vote.html">VOTACION</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                UNIVERSOS
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">DC</a>
+                                <a class="dropdown-item" href="#">Marvel</a>
+                                <a class="dropdown-item" href="#">Vertigo</a>
+                              </div>
+                            </li>
+                          </ul>
+                          <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                          </form>
+                        </div>
+                      </nav>
+
+              <div class="container text-justify col-xs-12">
+                  <div class="boxVS row justify-content-center">
+                        
+                        <script>
+                              var comic1 =0;
+                              var comic2=0;
+                              
+                              function onClicks(){
+                                    comic1 += 1;
+                                    VoteBar(comic1,comic2);
+                                    document.getElementById("comic1").innerHTML= comic1;
+                              };
+                                                
+
+                              function onClick(){
+                                    comic2 += 1;
+                                    VoteBar(comic1,comic2);                                         
+                                    document.getElementById("comic2").innerHTML= comic2;
+                              };                  
+                        </script>
+
+                        <div class="col-xs-6 col-lg-5">
+                              <button class="thumbnail button-size" onClick="onClicks()">
+                                    <img src="./imagenes/Batman-Flash-The-Button-HC.jpg" class="imagen-size-vote img-responsive" alt="foto de batman">
+                              </button>
+                              <p>Votos: <a id="comic1"> 0 </a></p>
+                        </div>
+                        <div class="col-xs-6 col-lg-5">
+                              <button class="thumbnail button-size" onClick="onClick()">
+                                    <img src="./imagenes/el-Comics-Presents-72.jpg" class="imagen-size-vote img-responsive" alt="foto de lobezno">
+                              </button>
+                              <p>Votos: <a id="comic2"> 0 </a></p>
+                        </div>
+                        <div class="versus">
+                              <a href="#" class="panel-heading">
+                                    <img src="./imagenes/2018-09-28.png" class="img-responsive" alt="VS">
+                              </a>
+                        </div>
+                  </div>
+                  <div class="title-vote"><h4>Votacion</h4></div>
+                  <div class="move">
+                              <div class="progress col-xs-12">
+                                    <div id="progressBar" class="justify-content-center progress-bar bg-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                              <br>
+                  </div>
+            </div>        
+        
+</body>
+</html>
+
